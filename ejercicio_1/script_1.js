@@ -21,8 +21,8 @@ function nextPlayer (board) {
   let countX = 0, countO = 0
   board.toString()
   	 	 .split(",")
-			 .filter(item => item != "")
-			 .forEach(item => item === "x" ? countX++ : countO++)
+	         .filter(item => item != "")
+	         .forEach(item => item === "x" ? countX++ : countO++)
   next = countX > countO ? "o" : "x"
   return next 
  }
