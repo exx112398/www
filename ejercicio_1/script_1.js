@@ -135,7 +135,3 @@ function findWinner (board) {
   
   return winner
 }
-
-populate(state)
-nextPlayer(state)
-findWinner(state)
