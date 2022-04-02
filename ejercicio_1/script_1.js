@@ -59,15 +59,15 @@ function findWinner (board) {
   /*---------------------------------------------------*/
   
   /*------------ Check Columns ------------------------*/
-	while (i < board.length && winner == null) {
-		selectedItem = ""
-  	board.forEach(element => selectedItem += element[i])
-  	if (selectedItem === elementX || selectedItem === elementO) {
+  while (i < board.length && winner == null) {
+    selectedItem = ""
+    board.forEach(element => selectedItem += element[i])
+    if (selectedItem === elementX || selectedItem === elementO) {
       winner = selectedItem[positionItem]
       break
     }
     i++
-	}
+  }
   /*---------------------------------------------------*/
   
   /*------------ Check Columns Improved ---------------*/
